@@ -6,7 +6,9 @@ def cpf_valido(numero_do_cpf):
     return cpf.validate(numero_do_cpf)
 
 def nome_valido(nome):
-    return nome.isalpha()
+    if all(x.isalpha() or x.isspace() for x in nome): #bug que não deixava incluir espaço no nome agr funciona
+        return nome
+        # return nome.isalpha() antigo 
 
 def rg_valido(numero_do_rg):
     return len(numero_do_rg) == 9
