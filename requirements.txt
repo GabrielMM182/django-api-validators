@@ -14,3 +14,4 @@ typed-ast==1.4.1
 wrapt==1.12.1
 validate-docbr==1.10.0
 Faker==11.3.0
+django-filter==21.1
